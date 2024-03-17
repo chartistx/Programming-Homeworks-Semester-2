@@ -1,0 +1,46 @@
+Programmējamais uzdevums Pasts
+Atmiņa: 20 MB
+Laiks: 0.2 second
+Ievadfails: post.in
+Izvadfails: post.out
+
+Apraksts
+Kādā pilsētā pirms Lieldienām visās pasta nodaļās pēkšņi no ierindas izgāja viss vienotais pasta datortīkls. Pēc situācijas izpētes IT speciālisti ziņoja, ka kārtējais vīrusu uzbrukums datortīklu ir sagrāvis uz ilgu laiku (datoru vīruss nevis COVID-19 koronavīruss). Pasts pamazām pārpildījās ar apsveikuma vēstulēm, kuras automātiskais šķirotājs vairs nešķiroja, jo to vadīja datorsistēma.
+
+Pasta vadītājs uz apspriedi izsauca visus savus zinošākos speciālistus, lai meklētu izeju no radušās situācijas. Atnāca arī darbinieks Gudriķis, kas pastā bija nostrādājis apmēram pusgadsimtu. Gudriķis atcerējās, ka agrāk vēstuļu šķirošana tika organizēta ar rokām un ieteica sekošu variantu.
+
+“Galvenais ir sašķirot vēstules pēc nosūtāmajām vietām. Lai to būtu vieglāk izdarīt, sākumā ir jāsašķiro visas vēstules pēc apdzīvotās vietas pirmā burta. Pēc tam katru kaudzīti jau ir vieglāk sašķirot pēc pašām apdzīvotajām vietām. Pēc tam ...” Gudriķis vēl ilgi stāstīja, kā noorganizēt šķirošanu.
+
+Pirmajā etapā darbinieki rīkojas sekojoši:
+
+Katram alfabēta burtam tiek nozīmēts viens pasta darbinieks. Netiek šķirots, vai burts ir mazais vai lielais.
+Vēstules tiek piegādātas darbiniekiem ar slīdošās lentas palīdzību
+Katrs darbinieks no lentas paņem sev piederošo vēstuli, t.i. to vēstuli, kuras adreses apdzīvotā vieta sākas ar darbiniekam piekārtoto burtu
+Darbinieks paņemtās vēstules secīgi liek vienā kaudzītē
+Pēc tam, kad visas vēstules uz lentas ir izbeigušās, darbinieki savas vēstules pa vienai ņem no savas kaudzītes un liek uz slīdošās lentas, lai tās nosūtītu uz nākošo šķirošanas etapu
+Darbinieki savas vēstules liek secīgi tiem piekārtoto burtu alfabētiskā kārtībā, t.i. vispirms visas savas vēstules liek darbinieks ar burtu “a”, pēc tam nākošie pēc alfabēta (ar burtu “b”, tad “c”, utt.)
+Jūsu uzdevums ir noprogrammēt pirmā etapa darba rezultātu.
+
+Ieeja:
+Ieejas fails satur apdzīvotās vietas, kas atdalītas ar vienu vai vairākiem tukšumiem.
+
+Name_1 Name_2 ... Name_n
+Name_i nosaka apdzīvotās vietas nosaukumu. Pieļaujamie simboli ir tikai mazie vai lielie latīņu alfabēta burti [a..z, A..Z]. Vietas garums ir robežās [1..255].
+Faila maksimālais garums ir 1MB. Apdzīvotās vietas var atkārtoties.
+
+Ieejas dati ir korekti saskaņā ar ieejas datu formātu un dotajiem ierobežojumiem.
+
+Izeja:
+Atbilstoši ieejas failam izejā ir ar tukšumu atdalītas visas ieejas faila apdzīvotās vietas formātā:
+
+Name_1 Name_2 ... Name_n
+Name_i nosaka apdzīvotās vietas nosaukumu, kur formāts ir tieši tāds pats kā ieejas failā.
+Ja ieejas failā nav nevienas apdzīvotās vietas, tad jāizdrukā vārds “nothing”.
+
+Piemērs:
+Ieejas faila post.in saturs:
+
+suunuciems riiga ventspils daugavpils valmiera valka riiga vecteetinjam saldus valka roja riiga
+Izejas faila post.out saturs:
+
+daugavpils riiga roja riiga riiga saldus suunuciems valka vecteetinjam valka valmiera ventspils
